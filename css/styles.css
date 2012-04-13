@@ -3,6 +3,29 @@
 body{
     overflow: hidden;
 }
+
+.navbar{
+    display: none;
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
+    /* filter: alpha(opacity=0); */
+    /* -moz-opacity: 0.0; */
+    /* -khtml-opacity: 0.0; */
+    /* opacity: 0.0; */
+}
+/*common styles*/
+
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+
+/* end of common styles */
+
 #landing{
     min-height: 658px;
     background-color:#fff7e9;
