@@ -68,16 +68,14 @@ body{
 }
 
 #whoweare{
-    background-color: #ccc;
+    background: url(../img/whoweare.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     min-height: 600px;
 }
 
-.left{
-    text-align: left;
-}
-.center{
-    text-align: center;
-}
-.right{
-    text-align: right;
+#whoweare .hero-unit{
+    background-color: transparent;
 }
