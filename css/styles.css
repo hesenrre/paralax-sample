@@ -1,34 +1,83 @@
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Dosis:200,300,400,500,600,700,800|Poiret+One|Sail|Magra:400,700|Oxygen|Imprima|Karla:400,400italic,700,700italic|Pontano+Sans|Basic|Cookie&subset=latin,latin-ext);
+
 body{
-    height: 2000px;
-}
-.small{
-    position: fixed;
-    top: 300;
-}
-.middle{
-    position: fixed;
-    top: 300;
-}
-.big{
-    position: fixed;
-    top: 300;
-}
-.small h1{
-    font-size: 60px;    
-}
-.middle h1{
-    font-size: 100px;    
-}
-.big h1{
-    font-size: 160px;    
-}
-.container{
-    min-height: 680px;
+    overflow: hidden;
 }
 #landing{
-    background: url(../img/w1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-height: 658px;
+    background-color:#fff7e9;
+}
+
+#landing > .logorow{
+    height: 100%;
+    overflow: hidden;
+    background: url(../img/red_band.jpg) repeat-x bottom center fixed;
+}
+
+#landing > .titlerow{
+    width: 100%;
+    bottom: 120px;
+    position: relative;
+    float: left;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0.0;
+    -khtml-opacity: 0.0;
+    opacity: 0.0;
+}
+#landing > .titlerow > .title{
+    width: 600px;
+    margin: 0 auto;
+    color:#fff7e9;
+}
+#landing > .titlerow > .title h1{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 60pt;
+    margin-bottom: 15px;
+}
+#landing > .titlerow > .title p{
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+#landing > .logorow > .item{
+    float: left;
+    width: 245px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0.0;
+    -khtml-opacity: 0.0;
+    opacity: 0.0;
+    height: 100%;
+    position: fixed;
+}
+
+#landing > .logorow > .bamboo_left{
+    background: url(../img/bamboo1.png) no-repeat bottom left;
+    left: -425px;
+}
+
+#landing > .logorow > .bamboo_right{
+    background: url(../img/bamboo2.png) no-repeat bottom right;
+    right: -425px;
+}
+
+#landing > .logorow > .logo{
+    background: url(../img/logo.png) center center no-repeat;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#whoweare{
+    background-color: #ccc;
+    min-height: 600px;
+}
+
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
 }
