@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Dosis:200,300,400,500,600,700,800|Poiret+One|Sail|Magra:400,700|Oxygen|Imprima|Karla:400,400italic,700,700italic|Pontano+Sans|Basic|Cookie&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Dosis:200,300,400,500,600,700,800|Antic+Slab|Poiret+One|Sail|Magra:400,700|Oxygen|Imprima|Karla:400,400italic,700,700italic|Pontano+Sans|Basic|Cookie|Italiana|Belleza|Arapey:400italic,400|Merriweather:400,300,700,900&subset=latin,latin-ext);
 
 body{
     overflow: hidden;
@@ -25,6 +25,11 @@ body{
 }
 
 /* end of common styles */
+
+.navbar .brand{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 14px;
+}
 
 #landing{
     min-height: 658px;
@@ -91,7 +96,7 @@ body{
 }
 
 #whoweare{
-    background: url(../img/whoweare.jpg) no-repeat center center fixed;
+    background: url(../img/whoweare2.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -99,6 +104,63 @@ body{
     min-height: 600px;
 }
 
-#whoweare .hero-unit{
-    background-color: transparent;
+#whoweare .span5 h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 23px;
+    color: white;
+    font-size: 60px;
+}
+
+#whoweare #content{
+    margin-top: 40px;
+    background: url(../img/traquilidad.png) white no-repeat fixed;
+    background-position-x: 80%;
+    background-position-y: 50%;
+}
+
+#whoweare #content .container .row{
+    margin-top: 40px;
+}
+
+#whoweare #content p{
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+}
+
+#whoweare #content h1{
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 5em;
+  margin-bottom: 40px;
+}
+
+#whoweare #content .experience h1{
+}
+
+#ourdisciplines{
+    background: url(../img/ourdisciplines.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#ourdisciplines > .headtitle >.row{
+    margin-top: 40px;
+}
+
+#ourdisciplines .span5 h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 23px;
+    color: white;
+    font-size: 60px;
+}
+#ourdisciplines #content{
+    margin-top: 40px;
+    background-color: white;
 }

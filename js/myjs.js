@@ -4,7 +4,14 @@
 
   var updatePortHeight = function(){
     portHeight = $(window).height();
-    $(".portView").css({height: portHeight});
+    $(".portView").css({minHeight: portHeight});
+
+    $(".portView > .headTitle").parent().each(function(e){
+      console.debug("drawing this");
+      console.debug($(this));
+      console.debug($(this).height());
+      $(this).find("#content").css("minHeight",(parseInt($(this).css('min-height')) - $(this).find(".headTitle").height())-40);
+    });
   }
 
   var initResizeDetection = function(){
@@ -95,3 +102,8 @@
 
   $(document).ready(initialize);
 })(jQuery);
+
+//$(window).scroll(function(){
+  //var percent = 120 - ((($(window).scrollTop() - $(window).height()) * 70)/679);
+  //$("#content").css("background-position-y", percent+"%");
+//});
