@@ -6,11 +6,6 @@ body{
 
 .navbar{
     display: none;
-    /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
-    /* filter: alpha(opacity=0); */
-    /* -moz-opacity: 0.0; */
-    /* -khtml-opacity: 0.0; */
-    /* opacity: 0.0; */
 }
 /*common styles*/
 
@@ -24,6 +19,19 @@ body{
     text-align: right;
 }
 
+.band{
+  width: 600px;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.band h1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 23px;
+    color: white;
+    font-size: 60px;
+}
 /* end of common styles */
 
 .navbar .brand{
@@ -104,15 +112,6 @@ body{
     min-height: 600px;
 }
 
-#whoweare .span5 h1{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 23px;
-    color: white;
-    font-size: 60px;
-}
-
 #whoweare #content{
     margin-top: 40px;
     background: url(../img/traquilidad.png) white no-repeat fixed;
@@ -136,8 +135,6 @@ body{
   margin-bottom: 40px;
 }
 
-#whoweare #content .experience h1{
-}
 
 #ourdisciplines{
     background: url(../img/ourdisciplines.jpg) no-repeat center center fixed;
@@ -149,18 +146,85 @@ body{
 }
 
 #ourdisciplines > .headtitle >.row{
-    margin-top: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
-#ourdisciplines .span5 h1{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 23px;
-    color: white;
-    font-size: 60px;
+#ourdisciplines #content, #ourdisciplines #content p{
+  font-family: 'Merriweather', serif !important;
 }
+#ourdisciplines #content .cleft .discipline p{
+  padding-right: 20px;
+}
+
 #ourdisciplines #content{
+  margin-top: 35px;
+}
+
+#ourdisciplines #content h3{
+  margin-bottom: 10px;
+}
+#ourdisciplines #content .cleft, #ourdisciplines #content .cright{
+  width: 45%;
+  background-color: white;
+}
+
+#ourdisciplines #content .cleft{
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-right-radius: 20px;
+} 
+#ourdisciplines #content .cright{
+  -webkit-border-top-left-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  border-top-left-radius: 20px;
+}
+#ourdisciplines #content .cmseparator {
+  min-height: 100;
+  width: 10%;
+  background-image: url(../img/dot4.png);
+}
+
+#ourdisciplines #content .panel {
+  position: relative;
+  float: left;
+}
+#ourdisciplines #content .panel .discipline{
+  margin-top: 30px;
+}
+#ourdisciplines #content .cleft .discipline{
+  background: url(../img/right_corner.png) no-repeat bottom right;
+  padding-bottom: 20px;
+  min-height: 160px;
+}
+#ourdisciplines #content .cright .discipline{
+  background: url(../img/left_corner.png) no-repeat bottom left;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  min-height: 160px;
+  margin-left: 76px;
+}
+
+#ourdisciplines #content .cright p{
+  margin-right: -40px;
+}
+
+#ourway > .headtitle >.row{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+#ourway{
+    background: url(../img/whoweare2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#ourway #content{
     margin-top: 40px;
-    background-color: white;
+    background-position-x: 80%;
+    background-position-y: 50%;
 }

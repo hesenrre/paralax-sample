@@ -7,11 +7,11 @@
     $(".portView").css({minHeight: portHeight});
 
     $(".portView > .headTitle").parent().each(function(e){
-      console.debug("drawing this");
-      console.debug($(this));
-      console.debug($(this).height());
       $(this).find("#content").css("minHeight",(parseInt($(this).css('min-height')) - $(this).find(".headTitle").height())-40);
+      $(this).find(".panel").css("minHeight",(parseInt($(this).css('min-height')) - $(this).find(".headTitle").height())-40);
     });
+    $(".cleft").parent().css("height",$(".cleft").height());
+    $(".cright").css("height",$(".cleft").height());
   }
 
   var initResizeDetection = function(){
@@ -39,7 +39,6 @@
   }
 
   var enableNavBarListener = function(){
-    console.debug("enabling navbar listener at top>"+$(window).scrollTop());
     $(window).scroll(function(){
       if($(window).scrollTop() >= ($("#landing").height() * 0.80)){
         $(".navbar").fadeIn(500);
