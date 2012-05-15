@@ -1,7 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Dosis:200,300,400,500,600,700,800|Antic+Slab|Poiret+One|Sail|Magra:400,700|Oxygen|Imprima|Karla:400,400italic,700,700italic|Pontano+Sans|Basic|Cookie|Italiana|Belleza|Arapey:400italic,400|Merriweather:400,300,700,900&subset=latin,latin-ext);
-
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Dosis:200,300,400,500,600,700,800|Antic+Slab|Poiret+One|Sail|Quicksand:300,400,700|Magra:400,700|Oxygen|Imprima|Karla:400,400italic,700,700italic|Pontano+Sans|Basic|Cookie|Italiana|Belleza|Arapey:400italic,400|Merriweather:400,300,700,900&subset=latin,latin-ext);
 body{
     overflow: hidden;
+    font-family: 'Merriweather', serif;
 }
 
 .navbar{
@@ -31,6 +31,8 @@ body{
     padding: 23px;
     color: white;
     font-size: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 }
 /* end of common styles */
 
@@ -41,13 +43,13 @@ body{
 
 #landing{
     min-height: 658px;
-    background-color:#fff7e9;
+    background: #fff7e9 url(../img/red_band.jpg) repeat-x bottom center fixed;
 }
 
 #landing > .logorow{
     height: 100%;
     overflow: hidden;
-    background: url(../img/red_band.jpg) repeat-x bottom center fixed;
+    /*background: url(../img/red_band.jpg) repeat-x bottom center fixed;*/
 }
 
 #landing > .titlerow{
@@ -114,9 +116,9 @@ body{
 
 #whoweare #content{
     margin-top: 40px;
-    background: url(../img/traquilidad.png) white no-repeat fixed;
-    background-position-x: 80%;
-    background-position-y: 50%;
+    background: url(../img/traquilidad.png) white no-repeat 80% 50% fixed;
+    /*background-position-x: 80%;*/
+    /*background-position-y: 50%;*/
 }
 
 #whoweare #content .container .row{
@@ -152,9 +154,11 @@ body{
 
 #ourdisciplines #content, #ourdisciplines #content p{
   font-family: 'Merriweather', serif !important;
+  font-weight: 300;
 }
 #ourdisciplines #content .cleft .discipline p{
   padding-right: 20px;
+  text-indent: 20px;
 }
 
 #ourdisciplines #content{
@@ -163,6 +167,8 @@ body{
 
 #ourdisciplines #content h3{
   margin-bottom: 10px;
+  color: #937D4B;
+  font-style: italic;
 }
 #ourdisciplines #content .cleft, #ourdisciplines #content .cright{
   width: 45%;
@@ -207,6 +213,7 @@ body{
 
 #ourdisciplines #content .cright p{
   margin-right: -40px;
+  text-indent: 20px;
 }
 
 #ourway > .headtitle >.row{
@@ -215,7 +222,7 @@ body{
 }
 
 #ourway{
-    background: url(../img/whoweare2.jpg) no-repeat center center fixed;
+    background: url(../img/ourway.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -225,6 +232,89 @@ body{
 
 #ourway #content{
     margin-top: 40px;
-    background-position-x: 80%;
-    background-position-y: 50%;
+    background: url(../img/circule.png) no-repeat right top;
+}
+#ourway #content .container{
+  padding-top: 20px;
+}
+#ourway #content ol{
+  font-family: 'Merriweather', serif !important;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #88370D;
+}
+#ourway #content ol li h2, #ourway #content ol li h3{
+  font-weight: normal;
+}
+#ourway #content ol li h2{
+  border-top: 2px solid #eee;
+  color: black;
+}
+#ourway #content ol li h3{
+  color: #937D4B;
+  font-style: italic;
+}
+#ourway #content ol li p{
+  color: black;
+}
+#workclients{
+    background: url(../img/workclients.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+#workclients .headTitle .row{
+  margin-top: 40px;
+}
+#workclients .title{
+  position: relative;
+  float: left;
+  height: 640px;
+  width: 300px;
+  background: url(../img/work_clients.png) no-repeat center center, url(../img/dot4.png);
+}
+#workclients .workcontent{
+  position: relative;
+  float: left;
+  height: 640px;
+  background-color: white;
+  width: 978px;
+}
+
+#contactus{
+  background: url(../img/contactus.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 600px;
+}
+
+#contactus .headTitle{
+  margin-bottom: 50px;
+}
+
+#contactus .row-fluid h1{
+  font-size: 60px;
+  line-height: 80px;
+  color: white;
+  background: url(../img/dot_white.png)  rgba(0, 0, 0, 0.25);
+  padding: 20px 20px 20px 25px;
+}
+#contactus .row-fluid p{
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  font-size: 15px;
+}
+#contactus hr{
+  border: 0;
+  border-top: 1px solid white;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
 }

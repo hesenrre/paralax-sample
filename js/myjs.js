@@ -87,6 +87,14 @@
 
   var initialize = function(){
     console.debug("initializing");
+    if((navigator.userAgent.match(/iPhone/i)) || 
+       (navigator.userAgent.match(/iPod/i)) || 
+           (navigator.userAgent.match(/Android/i))|| 
+               (navigator.userAgent.match(/iPad/i))){
+      $("head #roonincss").attr("href","css/styles_mob.css");
+    } 
+
+    console.debug(navigator.userAgent.toLowerCase());
     portHeight = $(window).height();
     initResizeDetection();
     fadingOnScroll(".item","#landing","out");
